@@ -1,4 +1,4 @@
-name: CI
+name: Dev
 
 # Controls when the workflow will run
 on:
@@ -11,7 +11,7 @@ on:
 jobs:
   Logintodockerhub:
     runs-on: ubuntu-latest
-    environment: Dev
+    environment: raj-env-dev
     steps:
     - uses: actions/checkout@v3
     - name: docker login
