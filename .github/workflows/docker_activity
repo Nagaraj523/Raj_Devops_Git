@@ -1,4 +1,4 @@
-name: Docker Activity
+name: CI
 
 # Controls when the workflow will run
 on:
@@ -24,7 +24,7 @@ jobs:
     - name: Docker_Tag
       run: docker tag glassfish rajkolli5236/docker_img
     - name: Docker Push  task
-      run: docker push rajkolli5236/docker_img:tagname
+      run: docker push rajkolli5236/docker_img
   Logintodockerhub2:
     runs-on: ubuntu-latest
     environment: raj-env-qa
